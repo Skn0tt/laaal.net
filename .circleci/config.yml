@@ -12,6 +12,8 @@ jobs:
     working_directory: ~/
 
     steps:
+      
+      - checkout
               
       - run:
           name: install firebase
