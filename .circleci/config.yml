@@ -29,8 +29,6 @@ workflows:
   build_test_deploy:
     jobs:
       - deploy:firebase:
-          requires:
-            - test
           filters:
             branches:
               only:
