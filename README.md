@@ -7,10 +7,6 @@ The *official* Laaal-Manifest.
 To contribute, fork the repo and make your changes.
 Then create a PR to this repo and wait for it to be merged.
 
-To preview the page, use [firebase-tools](https://github.com/firebase/firebase-tools):
+To preview the page, run `python -m SimpleHTTPServer` in `/public`.
 
-```
-firebase serve
-```
-
-You can then see the page at `localhost:5000`.
+You can then see the page at `localhost:8000`.
