@@ -2339,6 +2339,11 @@ input, select, textarea {
 			background-color: rgba(255, 255, 255, 0.2);
 		}
 
+	.avatar {
+		width: 200px;
+		height: 200px;
+	}
+
 /* Image */
 
 	.image {
@@ -2396,13 +2401,22 @@ input, select, textarea {
 /* List */
 
 	ol {
-		list-style: decimal;
+		list-style: none;
+		list-style-position: inside;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+		counter-reset: li-counter;
 	}
 
 		ol li {
+			counter-increment: li-counter;
 			padding-left: 0.25em;
+		}
+
+		ol li::before {
+			content: counter(li-counter) ". ";
+			color: red;
+			font-weight: bold;
 		}
 
 	ul {
